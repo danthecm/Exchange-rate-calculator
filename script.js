@@ -26,7 +26,16 @@ function calculate() {
 }
 calculate();
 
+function swapExchange() {
+    tempA = amountEl_one.value;
+    tempC = currencyEl_one.value;
+    currencyEl_one.value = currencyEl_two.value;
+    amountEl_one.value = amountEl_two.value;
+    currencyEl_two.value = tempC;
+    amountEl_two.value = tempA;
 
+
+}
 
 // EVENT LISTENERES
 currencyEl_one.addEventListener("change", calculate)
